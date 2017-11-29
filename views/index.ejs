@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>nodemailer</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <p>Welcome to <%= title %></p>
+    <div class="header">
+    	<h1 class="contact">
+    		Contact Me
+    	</h1>
+    	<h1><%=message%></h1>
+    </div>
+    <div class="container">
+    	<form method="post" action="/send">
+    		<div class="form-group">
+    			<label>Name</label>
+    				<input class="form-control" name="name"/>
+    		</div>
+    		<div class="form-group">
+    			<label>Email Address</label>
+    				<input class="form-control" name="email"/>
+    		</div>
+    		<div class="form-group">
+    			<label>Phone</label>
+    				<input class="form-control" name="phone"/>
+    		</div>
+    		<div class="form-group">
+    			<label>Message</label>
+    				<textarea class="form-control" rows="3" name="content"/></textarea>
+    		</div>
+    		<button type="submit" class="btn btn-warning">Press Me</button>
+    	</form>
+    </div>
+  </body>
+</html>
