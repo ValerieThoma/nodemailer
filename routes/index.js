@@ -40,7 +40,7 @@ router.post('/send', (req, res)=>{
 
 	var mail = {
 		from: email,
-		to: 'hayescapers5@gmail.com',
+		to: 'lisagarlandrn@gmail.com',
 		subject : 'test',
 		text: finalMessage
 	}
